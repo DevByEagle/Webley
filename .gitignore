@@ -1,0 +1,22 @@
+# Build directories and output
+build/
+dist/
+__pycache__/
+*.egg-info/
+
+# Compiled object files, libraries, and executables
+*.so
+*.dylib
+*.pyd
+*.log
+
+# IDE/editor config files
+## Visual Studio
+.vscode/
+
+# JetBrains PyCharm
+.idea/
+*.iml
+
+# Backup and temporary files
+*~

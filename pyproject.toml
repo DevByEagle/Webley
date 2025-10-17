@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webley"
+description = ""
+version = "1.0.0"
+license = {text = "MPL-2.0"}
+authors = []
+requires-python = ">=3.11"
+dependencies = []
+readme = "README.md"
+classifiers = []
+
+[project.urls]
+Source = "https://github.com/DevByEagle/Webley"
+#Documentation = ""
+Tracker = "https://github.com/DevByEagle/Webley/issues"
+
+[project.optional-dependencies]
