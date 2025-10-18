@@ -15,7 +15,7 @@ classifiers = []
 
 [project.urls]
 Source = "https://github.com/DevByEagle/Webley"
-#Documentation = ""
+Documentation = "https://devbyeagle.github.io/Webley/"
 Tracker = "https://github.com/DevByEagle/Webley/issues"
 
 [project.optional-dependencies]
