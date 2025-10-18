@@ -38,8 +38,8 @@ Represents an HTTP response returned to the client.
 ```ts linenums="0"
 interface HttpResponse {
     status_code: number;
-    headers: Array<string, string>;
-    content: byte;
+    headers: Dictionary<string, string>;
+    content: bytes;
 }
 ```
 
