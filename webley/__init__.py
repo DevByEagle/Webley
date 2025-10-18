@@ -4,7 +4,10 @@
 __version__ = "1.0.0"
 
 from . import http
-from .core.server import route, run
+from .core.server import (
+    route,
+    run
+)
 
 __all__ = list(
     {"http"} |

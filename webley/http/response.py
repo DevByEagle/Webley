@@ -1,9 +1,11 @@
+from typing import Any, Dict
+
 class HttpResponse:
     def __init__(self, content=b"", *args, **kwargs):
         self.status_code: int = kwargs.get("status_code", 200)
-        self.headers = {}
+        self.headers: Dict[str, str] = {}
         self.content = content
-
+    
     def __repr__(self):
         pass
 
@@ -11,7 +13,7 @@ class HttpResponse:
         return self.content.decode()
     
     # TODO: Remove this function
-    def send(self, handler):
+    def send(self, handler: Any):
         handler.send_response(self.status_code)
         for key, value in self.headers.items():
             handler.send_header(key, value)
