@@ -7,13 +7,13 @@ class HttpResponse:
         self.content = content
     
     def __repr__(self):
-        pass
+        return ""
 
+    @property
     def text(self):
         return self.content.decode()
-    
-    # TODO: Remove this function
-    def send(self, handler: Any):
+
+    def _send_response(self, handler: Any):
         handler.send_response(self.status_code)
         for key, value in self.headers.items():
             handler.send_header(key, value)

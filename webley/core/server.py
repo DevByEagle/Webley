@@ -19,7 +19,7 @@ class ServerHandler(BaseHTTPRequestHandler):
                 b"<h1>404 Not Found</h1>", status_code=404
             )
         
-        response.send(self)
+        response._send_response(self)
 
 def route(path: str):
     def decorator(func: Callable[[HttpRequest], HttpResponse]) -> Callable:

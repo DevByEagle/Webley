@@ -5,13 +5,16 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "webley"
 description = ""
-version = "1.0.0"
+dynamic = ["version"]
 license = {text = "MPL-2.0"}
 authors = []
 requires-python = ">=3.11"
 dependencies = []
 readme = "README.md"
 classifiers = []
+
+[tool.setuptools.dynamic]
+version = {attr = "webley.__version__"}
 
 [project.urls]
 Source = "https://github.com/DevByEagle/Webley"
