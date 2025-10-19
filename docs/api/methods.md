@@ -18,7 +18,7 @@ icon: material/function
 | Function | Description |
 | :-- | :-- |
 | run(address: string, port: int): `None` | Starts the Webley development server at the specified address and port. |
-| route(path: string): [`Callable`]() | A decorator that registers a function as a route handler for the given path. |
+| route(path: string): [`Callable`](https://docs.python.org/3/library/typing.html#typing.Callable) | A decorator that registers a function as a route handler for the given path. |
 
 
 ## **Module: [`webley.http`]** {#webley-http data-toc-label="webley.http"}
@@ -35,6 +35,6 @@ Returns the content of the response as a UTF-8 decoded string.
 
 <table>
   <tr>
-    <td><code>str</code></td>
+    <td><a href="https://docs.python.org/3/library/stdtypes.html#str">string</a></td>
   </tr>
 </table>
