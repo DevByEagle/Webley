@@ -40,4 +40,7 @@ nav:
       - Installation: installation.md
       - Usage: usage.md
   # - FAQ: faq.md
-  - API Reference: api-reference.md
+  - API Reference:
+      - Packages: api/packages.md
+      - Classes & Types: api/types.md
+      - Methods & Functions: api/methods.md

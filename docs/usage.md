@@ -10,7 +10,7 @@ For installation instructions, see [Installation].
     Refer to the [API Reference] for complete details on Webley’s classes, methods, and utilities, and learn how to leverage Webley’s full capabilities.
 
     [Installation]: installation.md
-    [API Reference]: api-reference.md
+    [API Reference]: api/packages.md
 
 ### Customization
 
