@@ -1,3 +1,8 @@
+---
+icon: material/widgets-outline
+---
+
+
 <style>
     .md-typeset__table {
       width: 100%;

@@ -1,3 +1,7 @@
+---
+icon: material/cube-outline
+---
+
 ### `HttpRequest`
 
 Represents an HTTP request received by the Webley server. It encapsulates request data such as the path, HTTP method, headers, query parameters, and body.
