@@ -4,15 +4,23 @@ copyright: Copyright &copy; DevByEagle
 theme:
   name: material
   palette:
-    primary: indigo
-    accent: blue
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
   features:
+    - content.code.annotat
     - content.code.copy
-    - content.tooltips
     - navigation.instant
-    - navigation.indexes
     - navigation.top
     - search.highlight
+    - search.suggest
     - toc.integrate
 
 extra:
@@ -21,18 +29,30 @@ extra:
       link: https://github.com/DevByEagle/Webley
 
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
+  - codehilite
+  - footnotes
   - md_in_html
+  - pymdownx.arithmatex
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.critic
   - pymdownx.details
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.superfences
   - pymdownx.highlight:
       linenums: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
 
 nav:
   - Home: index.md
