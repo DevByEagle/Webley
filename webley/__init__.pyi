@@ -9,7 +9,7 @@ from webley import (
 
 from webley.core.server import (
     route,
-    run as run
+    run
 )
 
 __all__ = [
@@ -17,7 +17,7 @@ __all__ = [
     "http",
 
     # core.__all__
-    "route", "run"
+    "route", "run",
 
     # __init__.__all__
     "__version__",
