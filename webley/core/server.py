@@ -1,10 +1,11 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
-from typing import Callable, Dict
+from typing import Callable, Dict, NoReturn
 from urllib.parse import urlparse
 from webley.http import HttpRequest, HttpResponse
 
 ROUTES: Dict[str, Callable[[HttpRequest], HttpResponse]] = {}
 
+# TODO: Relocate this class to a separate Python module for better organization.
 class ServerHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         request = HttpRequest()

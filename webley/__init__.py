@@ -25,4 +25,8 @@ def __getattr__(attr):
         return http
     raise AttributeError(f"module {__name__!r} has no attribute {attr!r}")
 
-del warnings
+def __dir__():
+    pass
+
+# Clean up namespace and remove standard library and package references.
+del warnings, core

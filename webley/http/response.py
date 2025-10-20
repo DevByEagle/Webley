@@ -13,6 +13,7 @@ class HttpResponse:
     def text(self):
         return self.content.decode()
     
+    # TODO: Move this to server.py or an appropriate module.
     def _send_response(self, handler: Any):
         handler.send_response(self.status_code)
         for key, value in self.headers.items():
