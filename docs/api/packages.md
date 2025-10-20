@@ -13,9 +13,11 @@ icon: material/widgets-outline
     }
 </style>
 
+# Webley Packages
 
 Below is a list of the core packages included in Webley and their descriptions.
 
 | Package | Description |
 | :-- | :-- |
-| `webley.http` | Core HTTP classes ([`HttpRequest`](types.md/#httprequest) & [`HttpResponse`](types.md/#httpresponse)) for handling requests, headers, and responses. |
+| `webley.http` | Core HTTP request and response classes. Handles incoming requests, responses, headers, and payloads. |
+| `webley.utils` | Utility functions and helpers commonly used across the framework. |

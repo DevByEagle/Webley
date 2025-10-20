@@ -2,9 +2,9 @@
 icon: material/cube-outline
 ---
 
-### `HttpRequest`
+## `HttpRequest`
 
-Represents an HTTP request received by the Webley server. It encapsulates request data such as the path, HTTP method, headers, query parameters, and body.
+Represents an HTTP request received by the Webley server. It encapsulates all request data, including the URL path, HTTP method, headers and more.
 
 ```ts linenums="0"
 interface HttpRequest {
@@ -18,11 +18,13 @@ interface HttpRequest {
 | Attribute | Description | Default |
 | :-- | :-- | :-- |
 | `path` | The URL path of the request (e.g., `"/"`, `"/users"`). | `""` |
-| `method` | The HTTP method used for the request (e.g., `"GET"`, `"POST"`). | `None` |
+| `method` | The HTTP method used (e.g., `"GET"`, `"POST"`). | `"GET"` |
 
-### `HttpResponse`
+### Methods
 
-Represents an HTTP response returned to the client. Allows setting the status code, headers, and content.
+## `HttpResponse`
+
+Represents an HTTP response returned to the client. Allows configuration of the status code, headers, and body content.
 
 ```ts linenums="0"
 interface HttpResponse {
@@ -36,4 +38,11 @@ interface HttpResponse {
 
 | Attribute | Description | Default |
 | :-- | :-- | :-- |
-| `status_code` | The HTTP status code (e.g., `200`, `404`, `500`). | `"200"` |
+| `status_code` | The HTTP status code (e.g., `200`, `404`, `500`). | `200` |
+| `content` | Response body as bytes. | `b""` |
+
+### Methods
+
+| text(): [`string`]() |
+| :-- |
+| Returns the content of the response as a UTF-8 decoded string. |

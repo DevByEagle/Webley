@@ -1,0 +1,1 @@
+Webley provides a structured set of custom exceptions to make error handling clear and predictable. All Webley exceptions inherit from the base [``]() class.
