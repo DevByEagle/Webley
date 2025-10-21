@@ -22,3 +22,9 @@ Documentation = "https://devbyeagle.github.io/Webley/"
 Tracker = "https://github.com/DevByEagle/Webley/issues"
 
 [project.optional-dependencies]
+
+[tool.black]
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
