@@ -53,11 +53,10 @@ markdown_extensions:
   - toc:
       permalink: true
 
-
 nav:
   - Home: index.md
   - Getting Started:
     - Installation: installation.md
   - API Reference:
     - Packages: api/packages.md
-    - Classes & Types: api/types.md
+    # - Classes & Types: api/types.md
