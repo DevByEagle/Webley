@@ -8,3 +8,9 @@ def get_version():
 
 def write_version_info():
   pass
+
+def main():
+  pass
+
+if __name__ == "__main__":
+    main()
