@@ -1,6 +1,7 @@
 # Webley
 
-[![PyPI](https://img.shields.io/pypi/v/webley?logo=python&color=blue)](https://pypi.org/project/webley/)
+[![CI](https://github.com/DevByEagle/Webley/actions/workflows/ci.yml/badge.svg)](https://github.com/DevByEagle/Webley/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/webley?color=blue)](https://pypi.org/project/webley/)
 
 Webley is a modern, lightweight Python web framework designed for **speed**, **simplicity**, and **developer-friendly design**.  
 
