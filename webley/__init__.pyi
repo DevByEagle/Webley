@@ -1,20 +1,13 @@
-from typing import (
-    Final,
-    LiteralString
-)
+from typing import Final, LiteralString
 
-from webley import (
-    http
-)
+from webley import http
 
 __all__ = [
     # Submodules
     "http",
-    
     # core.__all__
-
     # __init__.__all__
-    "__version__"
+    "__version__",
 ]
 
 # Public API

@@ -1,5 +1,6 @@
 from typing import Any, Dict
 
+
 class HttpResponse:
     def __init__(self, content=b"", *args, **kwargs):
         self.status_code: int = kwargs.get("status_code", 200)
@@ -8,7 +9,7 @@ class HttpResponse:
 
     def __repr__(self):
         return ""
-    
+
     # TODO: Move this to server.py or an appropriate module.
     def _send_response(self, handler: Any):
         handler.send_response(self.status_code)
