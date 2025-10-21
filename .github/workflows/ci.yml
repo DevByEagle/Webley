@@ -27,7 +27,9 @@ jobs:
           pip install black
 
       - name: Run Black
-        run: black --check --diff .
+        run: |
+          black --check --diff .
+          black .
 
   lint:
     runs-on: ubuntu-latest
