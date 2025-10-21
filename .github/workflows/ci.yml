@@ -11,7 +11,7 @@ on:
       - "**.py"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   format:
@@ -40,8 +40,6 @@ jobs:
             git commit -m "Apply Black code formatting" && \
             git push \
           )
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   lint:
     runs-on: ubuntu-latest
