@@ -1,20 +1,16 @@
 from typing import Any, Dict
 
-
 class HttpResponse:
+
+    status_code: int
+
     def __init__(self, content=b"", *args, **kwargs):
-        self.status_code: int = kwargs.get("status_code", 200)
+        self.status_code = kwargs.get("status_code", 200)
         self.headers: Dict[str, str] = {}
         self.content = content
+        # default content-type
+        if isinstance(content, (str, bytes)):
+            self.headers.setdefault("Content-Type", "text/html")
 
     def __repr__(self):
         return ""
-
-    # TODO: Move this to server.py or an appropriate module.
-    def _send_response(self, handler: Any):
-        handler.send_response(self.status_code)
-        for key, value in self.headers.items():
-            handler.send_header(key, value)
-        handler.send_header("Content-Length", str(len(self.content)))
-        handler.end_headers()
-        handler.wfile.write(self.content)

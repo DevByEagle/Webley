@@ -18,7 +18,7 @@ version = {attr = "webley.__version__"}
 
 [project.urls]
 Source = "https://github.com/DevByEagle/Webley"
-Documentation = "https://devbyeagle.github.io/Webley/"
+#Documentation = "https://devbyeagle.github.io/Webley/"
 Tracker = "https://github.com/DevByEagle/Webley/issues"
 
 [project.optional-dependencies]

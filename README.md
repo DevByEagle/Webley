@@ -1,15 +1,23 @@
-# Webley
+<p align="center">
 
-[![CI](https://github.com/DevByEagle/Webley/actions/workflows/ci.yml/badge.svg)](https://github.com/DevByEagle/Webley/actions/workflows/ci.yml)
+  <h2 align="center">
+      Webley
+  </h2>
+
+  <p align="center">
+  </p>
+
 [![PyPI](https://img.shields.io/pypi/v/webley?color=blue)](https://pypi.org/project/webley/)
 
-Webley is a modern, lightweight Python web framework designed for **speed**, **simplicity**, and **developer-friendly design**.  
+</p>
 
-Webley makes building web applications straightforward while giving you the flexibility to customize routes, handle requests directly, and control responses. Its minimalistic approach allows you to focus on what really matters—your application logic—without unnecessary boilerplate.
+## About the Project
 
-## 🚀 Getting Started
+Webley is a modern, lightweight web framework for Python. It makes building web applications less complex by providing a minimalistic, yet powerful foundation for web development.
 
-Begin building web applications with Webley in just a few steps. Our [Getting Started Guide](https://devbyeagle.github.io/Webley/) will walk you through setting up and writing your first Webley-powered app.
+### Why Webley
+
+Developing web applications in Python often involves juggling multiple libraries, boilerplates, and frameworks. Many solutions can feel overly complex or fragmented, requiring extra work to implement anything beyond basic functionality. Rather than just patching together multiple tools, Webley provides a cohesive, lightweight framework that gives you everything you need to build web applications efficiently.
 
 ## Contributing
 
@@ -21,10 +29,10 @@ Webley exists thanks to the community!
 
 We welcome all contributions—bug fixes, new features, documentation improvements, or suggestions.
 
-Before submitting a pull request, please read the [contribution guidelines]() to help maintain consistency and quality.
+Before submitting a pull request, please read the contribution guidelines (Coming Soon) to help maintain consistency and quality.
 
 Thank you for helping make Webley better for everyone! 🚀
 
 ## License
 
-This project is licensed under the Mozilla Public License 2.0 - see the [LICENSE.txt](LICENSE.txt) file for details.
+Webley is licensed under the **Mozilla Public License 2.0.** See [LICENSE.txt](LICENSE.txt) for details.
