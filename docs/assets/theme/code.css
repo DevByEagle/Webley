@@ -1,0 +1,74 @@
+* {
+  --webley-code-separator: #3a3a3f;
+  --webley-hl-glow: 0 0 0.35rem
+    color-mix(in srgb, var(#447cff) 40%, transparent);
+}
+
+.md-typeset code {
+  border-radius: 0.35rem;
+  padding: 0.1rem 0.25rem;
+}
+
+.highlighttable .linenos {
+  border-bottom-left-radius: 0.35rem;
+  border-top-left-radius: 0.35rem;
+}
+
+.highlighttable .linenodiv {
+  box-shadow: none;
+}
+
+.highlighttable .linenodiv pre {
+  color: #d4d4d8;
+}
+
+.highlight .hll {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, #447cff 10%, transparent) 0%,
+    color-mix(in srgb, #447cff 5%, transparent) 100%
+  );
+  box-shadow: inset 0.2rem 0 #447cff, var(--webley-hl-glow);
+  transition: background 0.15s ease;
+}
+
+.highlight .hll:hover {
+  background: color-mix(in srgb, #447cff 15%, transparent);
+}
+
+.highlight .md-clipboard {
+  color: #f1f1f4 !important;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(-2px);
+}
+
+.highlight:hover .md-clipboard {
+  opacity: 0.55;
+  transform: translateY(0);
+}
+
+.highlight .md-clipboard:hover {
+  opacity: 1;
+}
+
+.highlight > pre,
+.highlighttable {
+  box-shadow: var(--md-shadow-z2);
+  border-radius: 0.35rem;
+  background: var(--md-code-bg-color);
+}
+
+.tabbed-set .highlight > pre {
+  box-shadow: none;
+  border: none;
+}
+
+code:not(pre code, .highlight) {
+  background-color: #2a2a2e !important;
+  color: #f1f1f4 !important;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.25rem;
+  box-shadow: var(--md-shadow-z1);
+  border: 1px solid #3a3a3f;
+}

@@ -1,1 +1,59 @@
 site_name: Webley
+repo_name: DevByEagle/Webley
+repo_url: https://github.com/DevByEagle/Webley
+
+theme:
+  name: material
+  font:
+    code: JetBrains Mono
+  features:
+    - content.code.copy
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - navigation.instant
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: octicons/mark-github-16
+
+extra_css:
+  - assets/theme/code.css
+
+extra_javascript:
+  - assets/scripts/scroll.js
+
+nav:
+  - Home: index.md
+  - API Reference:
+      - API Reference: api-reference/index.md
+      - General:
+          - Exceptions: api-reference/general/exceptions.md
+          - Types:
+              - Webley: api-reference/general/types/webley.md
+      - Networking:
+          - Types:
+              - HttpRequest: api-reference/network/types/httprequest.md
+              - HttpResponse: api-reference/network/types/httpresponse.md
+              - Router: api-reference/network/types/router.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - meta
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.betterem
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      linenums: true
+      guess_lang: false
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
