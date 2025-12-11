@@ -46,7 +46,6 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.highlight:
-      linenums: true
       guess_lang: false
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
