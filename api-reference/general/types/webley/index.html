@@ -48,6 +48,8 @@
     
       <link rel="stylesheet" href="../../../../assets/theme/code.css">
     
+      <link rel="stylesheet" href="../../../../assets/theme/reference.css">
+    
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -592,15 +594,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#members" class="md-nav__link">
+  <a href="#fields" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Members
+        Fields
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Members">
+    <nav class="md-nav" aria-label="Fields">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -608,6 +610,34 @@
     <span class="md-ellipsis">
       
         router : Router
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-none" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        run -&gt; None
       
     </span>
   </a>
@@ -897,15 +927,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#members" class="md-nav__link">
+  <a href="#fields" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Members
+        Fields
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Members">
+    <nav class="md-nav" aria-label="Fields">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -913,6 +943,34 @@
     <span class="md-ellipsis">
       
         router : Router
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-none" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        run -&gt; None
       
     </span>
   </a>
@@ -945,16 +1003,15 @@
 
 
 <h1 class="webley-api-header" id="webley">
-    <!-- <span class="webley-api-icon" markdown>:octicons-note-24:</span> -->
     <span class="webley-api-name">Webley</span>
 <a class="headerlink" href="#webley" title="Permanent link">&para;</a></h1>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Webley</span><span class="p">:</span>
-    <span class="n">router</span><span class="p">:</span> <span class="n">Router</span>
+    <span class="n">router</span><span class="p">:</span> <span class="n">Router</span><span class="p">;</span>
 </code></pre></div>
 <p>The main application object in the Webley framework.
 Handles routing and the running of a web server.</p>
 <hr />
-<h2 id="members">Members<a class="headerlink" href="#members" title="Permanent link">&para;</a></h2>
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h2>
 <h3 id="router-router">router
     <span class="webley-api-type"> 
         : <a href="../../network/types/router.md"> Router</a>
@@ -962,6 +1019,14 @@ Handles routing and the running of a web server.</p>
 <a class="headerlink" href="#router-router" title="Permanent link">&para;</a></h3>
 <p>The router instance responsible for storing all route handlers.
 Used internally by the Webley framework to match incoming requests.</p>
+<hr />
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
+<h3 id="run-none">
+    run
+    <span class="webley-api-type">
+        -&gt; None
+    </span>
+<a class="headerlink" href="#run-none" title="Permanent link">&para;</a></h3>
 
 
 
