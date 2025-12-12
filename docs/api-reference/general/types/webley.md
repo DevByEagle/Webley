@@ -1,11 +1,10 @@
 <h1 class="webley-api-header" markdown>
-    <!-- <span class="webley-api-icon" markdown>:octicons-note-24:</span> -->
     <span class="webley-api-name">Webley</span>
 </h1>
 
 ```python
 class Webley:
-    router: Router
+    router: Router;
 ```
 
 The main application object in the Webley framework.
@@ -13,7 +12,7 @@ Handles routing and the running of a web server.
 
 ---
 
-## Members
+## Fields
 
 <h3 markdown>router
     <span class="webley-api-type"> 
@@ -23,3 +22,14 @@ Handles routing and the running of a web server.
 
 The router instance responsible for storing all route handlers.
 Used internally by the Webley framework to match incoming requests.
+
+---
+
+## Methods
+
+<h3 markdown>
+    run
+    <span class="webley-api-type">
+        -> None
+    </span>
+</h3>
