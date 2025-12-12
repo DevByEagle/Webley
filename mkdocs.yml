@@ -28,7 +28,8 @@ extra:
 
 extra_css:
   - assets/theme/code.css
-
+  - assets/theme/reference.css
+  
 extra_javascript:
   - assets/scripts/scroll.js
 

@@ -72,35 +72,3 @@ code:not(pre code, .highlight) {
   box-shadow: var(--md-shadow-z1);
   border: 1px solid #3a3a3f;
 }
-
-.webley-api-header {
-  display: flex;
-  align-items: baseline;
-  margin: 0 !important;
-  flex-wrap: wrap;
-}
-
-.webley-api-header .webley-api-icon {
-  margin-right: 0.5em;
-}
-
-.webley-api-header > * {
-  flex-shrink: 0;
-}
-
-.webley-api-type {
-  vertical-align: middle;
-  font-size: calc((0.5em + 1rem) / 2);
-  flex-shrink: 0;
-
-  margin-left: 0.5em;
-
-  font-family: var(--md-code-font-family);
-  font-weight: 400;
-}
-
-.webley-api-type:not(a) {
-  opacity: 0.8;
-}
-
-

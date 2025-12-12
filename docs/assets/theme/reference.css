@@ -1,0 +1,20 @@
+.webley-api-header {
+
+}
+
+.webley-api-header .webley-api-icon {
+
+}
+
+.webley-api-type {
+
+}
+
+.webley-api-type:not(a) {
+    opacity: 0.8;
+}
+
+.webley-api-bento {
+    column-width: 12rem;
+    column-gap: 0.5rem;
+}
