@@ -18,3 +18,23 @@
     column-width: 12rem;
     column-gap: 0.5rem;
 }
+
+.webley-api-bento > * {
+    break-inside: avoid;
+    box-shadow: var(--md-shadow-z1);
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+	padding-bottom: 0.01rem;
+    margin: 0.5rem 0;
+    margin-top: 0;
+}
+
+.webley-api-bento > * :first-child {
+    margin-top: 0 !important;
+}
+
+.webley-api-index-link {
+    display:flex;
+    align-items: center;
+    gap: 0.5rem;
+}
