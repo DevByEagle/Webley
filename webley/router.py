@@ -1,15 +1,11 @@
-from typing import Dict, Callable
+from typing import (
+    Any,
+    Callable,
+    Dict
+)
+import re
 
-class Router:
-    def __init__(self):
-        self.routes = {}
-
-    def add_route(self, path, func):
-        self.routes[path] = func
-    
-    def get_handler(self, path):
-        return self.routes.get(path)
-    
-__all__ = [
-    'Router'
-]
+class Route:
+    def __init__(self, path: str, method: str):
+        self.path = path
+        self.method = method.upper()
