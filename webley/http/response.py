@@ -2,10 +2,9 @@ from typing import Any, Dict
 
 class HttpResponse:
 
-    status_code: int
+    status_code = 200
 
     def __init__(self, content=b"", *args, **kwargs):
-        self.status_code = kwargs.get("status_code", 200)
         self.headers: Dict[str, str] = {}
         self.content = content
         # default content-type
