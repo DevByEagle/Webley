@@ -1,5 +1,5 @@
 import re
-from typing import Callable, Dict, List, Optional, Tuple
+from typing import Any, Callable, Dict, List, Optional, Tuple
 
 from webley.http import HttpResponse
 
@@ -23,11 +23,11 @@ class Route:
 class Router:
     def __init__(self):
         self._routes: List[Route] = []
-    
+
     def add(self, path: str, handler: Callable[..., HttpResponse], *, method: str = "GET"):
         route = Route(path, method, handler)
         self._routes.append(route)
-
+    
     def resolve(self, path: str, method: str) -> Tuple[Optional[Callable[..., HttpResponse]], Optional[Dict[str, str]]]:
         method = method.upper()
         for route in self._routes:
@@ -37,7 +37,5 @@ class Router:
             if params is not None:
                 return route.handler, params
         return None, None
-    
-__all__ = [
-    'Router'
-]
+
+__all__ = ['Router']
