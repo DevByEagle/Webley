@@ -33,12 +33,6 @@ theme:
   icon:
     repo: octicons/mark-github-16
 
-plugins:
-  - search
-  - minify:
-      minify_html: true
-  - awesome-pages
-
 extra:
   social:
     - icon: simple/github
