@@ -1,25 +1,25 @@
 """
 """
 
-__version__ = "1.1.0"
+__version__ = "1.1.0-alpha"
 
-from .core.app import Webley
+from . import core
+from .core import (
+    Webley
+)
 
-from . import auth
-# from .auth import ()
-
-from . import http
-# from .http import ()
-
-from . import router
-from .router import Router
+from .http import HttpRequest, HttpResponse
 
 __all__ = list(
-    {"auth", "http", "router"} |
-    set(http.__all__)
+    {"auth", "http"} |
+    set(core.__all__) |
+    {"__version__"}
 )
 
 def __getattr__(attr):
+    pass
+
+def __dir__():
     pass
 
 # Clean up namespace and remove standard library and package references.

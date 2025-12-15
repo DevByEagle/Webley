@@ -4,7 +4,7 @@
 
 ```python
 class Webley:
-    router: Router;
+    router: Router
 ```
 
 The main application object in the Webley framework.
@@ -16,7 +16,7 @@ Handles routing and the running of a web server.
 
 <h3 markdown>router
     <span class="webley-api-type"> 
-        : <a href="../../network/types/router.md"> Router</a>
+        : <a href="../../../network/types/router"> Router</a>
     </span>
 </h3>
 

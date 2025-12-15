@@ -4,53 +4,66 @@ repo_url: https://github.com/DevByEagle/Webley
 
 theme:
   name: material
+  custom_dir: docs/assets/overrides
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Fira Code
   features:
     - content.code.copy
-    - navigation.tabs
-    - navigation.top
-    - navigation.sections
     - navigation.instant
     - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
     - search.suggest
     - search.highlight
-  font:
-    code: JetBrains Mono
   icon:
     repo: octicons/mark-github-16
 
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - awesome-pages
+
 extra:
-  version:
-    provider: mike
   social:
     - icon: simple/github
       link: https://github.com/DevByEagle/Webley
       name: GitHub
 
-extra_css:
-  - assets/theme/code.css
-  - assets/theme/reference.css
-  
-extra_javascript:
-  - assets/scripts/scroll.js
-
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
-  - meta
   - md_in_html
-  - pymdownx.superfences
-  - pymdownx.betterem
   - pymdownx.details
-  - pymdownx.tabbed:
-      alternate_style: true
+  - pymdownx.highlight
   - pymdownx.inlinehilite
+  - pymdownx.superfences
   - toc:
       permalink: true
-  - pymdownx.highlight:
-      guess_lang: false
+      toc_depth: 3
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - assets/theme/code.css
+  - assets/theme/reference.css
 
 nav:
   - Home: index.md
