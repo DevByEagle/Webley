@@ -30,25 +30,27 @@
 }
 
 .webley-api-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  column-width: 12rem;
+	column-gap: 0.5rem;
 }
 
-.webley-api-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  /* background-color: var(--webley-card-bg); */
-  border-radius: 12px;
-  padding: 1rem;
-  text-decoration: none;
-  color: var(--md-default-fg-color);
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
+.webley-api-grid  > * {
+  break-inside: avoid;
+	box-shadow: var(--md-shadow-z1);
+	border-radius: 0.25rem;
+	padding: 0.75rem 1rem;
+	padding-bottom: 0.01rem;
+	margin: 0.5rem 0;
+	margin-top: 0;
+}
+
+.webley-api-grid  > * :first-child {
+  margin-top: 0 !important;
+}
+
+.webley-api-grid > * > h3 {
+  font-size: 0.7rem;
+	font-weight: 700;
 }
 
 .webley-api-name {
