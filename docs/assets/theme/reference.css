@@ -1,6 +1,12 @@
-[data-md-color-scheme="default"] {}
+[data-md-color-scheme="default"] {
+  --webley-bg-2: #ffffff;
+  --webley-fg-3: #544c68;
+}
 
-[data-md-color-scheme="slate"] {}
+[data-md-color-scheme="slate"] {
+  --webley-bg-2: transparent;
+  --webley-fg-3: #ffffff;
+}
 
 .webley-api-header {
   display: flex;
@@ -18,11 +24,12 @@
 }
 
 .webley-api-type {
-  font-family: "Courier New", monospace;
-  font-weight: 500;
-  font-size: 0.85rem;
+  vertical-align: middle;
+  font-size: calc((0.5em + 1rem) / 2);
   flex-shrink: 0;
   margin-left: 0.5em;
+  font-family: var(--md-code-font-family);
+  font-weight: 500;
 }
 
 .webley-api-type:not(a) {
@@ -31,40 +38,38 @@
 
 .webley-api-grid {
   column-width: 12rem;
-	column-gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 
-.webley-api-grid  > * {
+.webley-api-grid > * {
   break-inside: avoid;
-	box-shadow: var(--md-shadow-z1);
-	border-radius: 0.25rem;
-	padding: 0.75rem 1rem;
-	padding-bottom: 0.01rem;
-	margin: 0.5rem 0;
-	margin-top: 0;
+  background-color: var(--webley-bg-2);
+  box-shadow: var(--md-shadow-z1);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  padding-bottom: 0.01rem;
+  margin: 0.5rem 0;
+  margin-top: 0;
 }
 
-.webley-api-grid  > * :first-child {
+.webley-api-grid > * :first-child {
   margin-top: 0 !important;
 }
 
 .webley-api-grid > * > h3 {
   font-size: 0.7rem;
-	font-weight: 700;
-}
-
-.webley-api-name {
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-bottom: 0.25rem;
+  color: var(--webley-fg-3);
+  font-weight: 700;
 }
 
 .webley-api-index-link {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  /* color: #0066cc !important; */
   margin: 1rem 0;
+}
+
+.webley-api-index-link:hover {
 }
 
 .webley-api-index-link > .webley-api-index-arrow {

@@ -64,7 +64,7 @@
   #webley-home-main-inner {
     translate: 0;
   }
-  #webley-home-main-inner::before {
+  #webley-home-main::before {
     filter: blur(2rem);
     opacity: 0.5;
   }
@@ -87,6 +87,9 @@
   transition: color 0s;
   border-radius: 0.25rem;
   transition: background-color 125ms;
+}
+
+#webley-home-main-inner > nav > a:is(:hover, :focus) {
 }
 
 #webley-scroll {

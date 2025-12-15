@@ -2,9 +2,11 @@
     <span class="webley-api-name">Webley</span>
 </h1>
 
-```python
-class Webley:
-    router: Router
+```ts
+class Webley = {
+    router: Router;
+    run: (self, host: string, port: int) => None;
+}
 ```
 
 The main application object in the Webley framework.
@@ -14,14 +16,12 @@ Handles routing and the running of a web server.
 
 ## Fields
 
-<h3 markdown>router
-    <span class="webley-api-type"> 
-        : <a href="../../../network/types/router"> Router</a>
+<h3 markdown>
+    router
+    <span class="webley-api-type">
+        : <a href="../../../network/types/router">Router</a>
     </span>
 </h3>
-
-The router instance responsible for storing all route handlers.
-Used internally by the Webley framework to match incoming requests.
 
 ---
 
@@ -33,3 +33,7 @@ Used internally by the Webley framework to match incoming requests.
         -> None
     </span>
 </h3>
+
+```python
+def Webley.run(self, host: str, port: int) -> None: ...
+```
