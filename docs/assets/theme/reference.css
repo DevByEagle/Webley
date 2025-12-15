@@ -30,21 +30,39 @@
   column-gap: 0.5rem;
 }
 
-.webley-api-bento  > * {
-    break-inside: avoid;
-    box-shadow: var(--md-shadow-z1);
-	border-radius: 0.25rem;
-	padding: 0.75rem 1rem;
-	padding-bottom: 0.01rem;
-	margin: 0.5rem 0;
-	margin-top: 0;
+.webley-api-bento > * {
+  break-inside: avoid;
+  box-shadow: var(--md-shadow-z1);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  padding-bottom: 0.01rem;
+  margin: 0.5rem 0;
+  margin-top: 0;
 }
 
 .webley-api-bento > * :first-child {
-	margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .webley-api-bento > * > h3 {
-    font-size: 0.7rem;
-    font-weight: 700;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.webley-api-index-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* color: #0066cc !important; */
+  margin: 1rem 0;
+}
+
+.webley-api-index-link > .webley-api-index-arrow {
+  margin-bottom: -0.3em;
+  transform: translateX(0rem);
+  transition: transform 0.2s ease;
+}
+
+.webley-api-index-link:hover > .webley-api-index-arrow {
+  transform: translateX(0.5rem);
 }
