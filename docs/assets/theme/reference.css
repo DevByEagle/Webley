@@ -41,7 +41,7 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  <!-- background-color: var(--webley-card-bg); -->
+  /* background-color: var(--webley-card-bg); */
   border-radius: 12px;
   padding: 1rem;
   text-decoration: none;
