@@ -1,8 +1,8 @@
 ---
-  template: home.html
-  hide:
-    - toc
-    - navigation
+#   template: home.html
+hide:
+  - toc
+  - navigation
 ---
 
 <div id="webley-home" markdown>
