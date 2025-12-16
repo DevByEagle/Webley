@@ -12,6 +12,7 @@ __pycache__/
 
 # IDE/editor config files
 ## Visual Studio
+.vscode/
 
 # JetBrains PyCharm
 .idea/

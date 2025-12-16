@@ -8,7 +8,7 @@ from webley import (
     http
 )
 
-from webley.core.app import Webley
+from webley.core.app import Webley, AppConfig
 
 from webley.http import (
     HttpRequest,
@@ -20,7 +20,7 @@ __all__ = [
     "exceptions", "http",
 
     # core.__all__
-    "Webley",
+    "AppConfig", "Webley",
 
     # http.__all__,
     "HttpRequest", "HttpResponse",
@@ -29,4 +29,5 @@ __all__ = [
     "__version__"
 ]
 
+# Public API
 __version__: Final[LiteralString] = ...

@@ -1,17 +1,19 @@
 """
 """
 
-__version__ = "1.1.0-alpha"
+__version__ = "1.1.0.dev0"
 
 from . import core
 from .core import (
+    AppConfig,
     Webley
 )
 
+from . import http
 from .http import HttpRequest, HttpResponse
 
 __all__ = list(
-    {"auth", "http"} |
+    {"exceptions", "http"} |
     set(core.__all__) |
     {"__version__"}
 )
