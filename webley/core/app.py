@@ -1,6 +1,7 @@
 from wsgiref import simple_server
-from typing import Optional, Protocol
+from typing import Callable, Optional, Protocol
 
+from webley.core.router import Router
 from webley.http import HttpRequest, HttpResponse
 
 class AppConfig(Protocol):
@@ -9,12 +10,41 @@ class AppConfig(Protocol):
 class Webley:
     def __init__(self, *, config: Optional[AppConfig] = None):
         self.config = config
+        self._router = Router()
 
     def route(self, path: str):
-        pass
+        def decorator(func: Callable[[HttpRequest], HttpResponse]):
+            self._router.add(path, func)
+            return func
+        return decorator
 
-    def run(self, host, port):
-        pass
+    def __call__(self, environ=None, start_response=None):
+        if environ is None or start_response is None:
+            raise RuntimeError(
+                "Direct calls to Webley instances are not allowed. Use run() instead."
+            )
+        
+        req = HttpRequest()
+        req.path = environ.get("PATH_INFO", "/")
+        req.method = environ.get("REQUEST_METHOD", "GET")
+
+        try:
+            handler, params = self._router.resolve(req.path, req.method)
+            req.content_params = params
+            res = handler(req)
+        except Exception as err:
+            res = HttpResponse(f"{err}") # Just for now
+        
+        start_response(res._get_status_code_as_string(), list(res.headers.items()))
+        return [res.content]
+
+    def run(self, host="127.0.0.1", port=8000):
+        try:
+            with simple_server.make_server(host, port, self) as server:
+                print(f"Running on http://{host}:{port}")
+                server.serve_forever()
+        except Exception as err:
+            return
 
 __all__ = [
     'AppConfig',
